@@ -1,0 +1,797 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* padding: 20px; */
+  background: gainsboro;
+  overflow: hidden;
+}
+.Add {
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  margin-left: 90%;
+  margin-top: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+.Add:hover {
+  background: greenyellow;
+  border: 1px solid blue;
+}
+
+.dashHead {
+  margin-top: 25px;
+  /* border: 1px solid; */
+  font-size: 25px;
+  margin-left: 40px;
+  border-radius: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+ 
+}
+
+.pipHead {
+  font-size: 25px;
+  margin-left: 40px;
+  /* margin-top: 15px; */
+  border-radius: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.newAdd {
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  /* margin-left: 90%; */
+  /* margin-top: 20px;  */
+  border: 1px solid;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.newAdd:hover {
+  background: greenyellow;
+  border: 1px solid blue;
+}
+.HeadAndButton {
+  width: 97%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid; */
+}
+.Status-container {
+  /* border: 3px solid; */
+  margin-left: 30px;
+  width: 95%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pipCon {
+  margin-left: 20px;
+  width: 97%;
+  height: 600px;
+  /* margin-top: 10px; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* border: 1px solid; */
+  margin-bottom: 400px;
+  gap: 10px;
+  /* overflow:scroll;  */
+  /* align-items: center; */
+}
+.pipCon::-webkit-scrollbar {
+  display: none;
+}
+
+.totalApp {
+  width: 23%;
+  height: 80%;
+  background: rgba(250, 249, 249, 0.933);
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.interviwe {
+  width: 23%;
+  height: 80%;
+  background: rgb(250, 249, 249);
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.Offers {
+  width: 23%;
+  height: 80%;
+  background: rgb(250, 249, 249);
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.RespoenceRate {
+  width: 23%;
+  height: 80%;
+  background: rgb(250, 249, 249);
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+/* Cards Styling..!! */
+
+.EmptyCard {
+  background: white;
+  width: 95%;
+  height: 100px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.EmptyCard > h4 {
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: #d9d2ef;
+}
+.JobCard {
+  background: white;
+  width: 95%;
+  height: 225px;
+  border-radius: 10px;
+  padding: 25px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.JobCard:hover {
+  /* transform:scale(1.00); */
+  border: 1px solid;
+  /* background: linear-gradient(135deg,#a19cff,#9659ff); */
+}
+
+.JobCard > h2 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.JobCard > h3 {
+  margin-top: 5px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  gap: 5px;
+}
+.JobCard > h4 {
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 5px;
+  font-size: 15px;
+  gap: 10px;
+}
+.JobCard > select {
+  margin-top: 10px;
+  height: 30px;
+  width: 90%;
+  border: 1px solid;
+  border-radius: 12px;
+  cursor: pointer;
+  /* background: #ddea94; */
+}
+
+.JobCard > select:hover {
+  transform: scale(1.01);
+}
+
+.btn {
+  width: 90%;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+.editBtn {
+  width: 45%;
+  height: 30px;
+  background: #f4ecec;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.editBtn:hover {
+  background: blueviolet;
+}
+
+.delbtn {
+  width: 45%;
+  height: 30px;
+  background: #f4ecec;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.delbtn:hover {
+  background: rgb(193, 105, 105);
+}
+
+.pipCon {
+  margin-left: 20px;
+  width: 97%;
+  height: 600px;
+  /* margin-top: 10px; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  overflow-y: auto;
+  /* border: 1px solid; */
+  margin-bottom: 400px;
+  gap: 10px;
+  /* overflow:scroll;  */
+  /* align-items: center; */
+}
+
+.ApplyCon {
+  width: 25%;
+  height: 50px;
+  /* background: rgb(254, 226, 226); 
+  border-radius: 10px;  
+  gap: 10px; 
+  border: 1px solid; */
+}
+
+.ShortlistCon {
+  width: 25%;
+  height: 50px;
+  /* background: rgb(211, 240, 197);
+  border: 1px solid;
+  border-radius: 10px; */
+}
+
+.InterviewCon {
+  width: 25%;
+  height: 50px;
+  /* background: #e6e0fb;
+  border: 1px solid;
+  border-radius: 10px; */
+}
+
+.offersCon {
+  width: 25%;
+  height: 50px;
+  /* background: #e2f6d5;
+  border: 1px solid;
+  border-radius: 10px; */
+}
+
+.RejectedCon {
+  width: 25%;
+  height: 50px;
+  /* background: #fdecec;
+  border: 1px solid;
+  border-radius: 10px; */
+}
+
+.Acon {
+  width: 25%;
+  height: 60px;
+  margin-top: 2px;
+  font-size: 25px;
+  text-align: center;
+  color: blue;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-top: 15px;
+  background: #ffe0e0;
+}
+.Scon {
+  width: 25%;
+  height: 60px;
+  margin-top: 2px;
+  font-size: 25px;
+  text-align: center;
+  color: blue;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-top: 15px;
+  background: #daffdd;
+}
+.Icon {
+  width: 25%;
+  height: 60px;
+  margin-top: 2px;
+  font-size: 25px;
+  text-align: center;
+  color: blue;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-top: 15px;
+  background: #efd6ff;
+}
+.Ocon {
+  width: 25%;
+  height: 60px;
+  margin-top: 2px;
+  font-size: 25px;
+  text-align: center;
+  color: #5a7d3a;
+  /* color: rgb(187, 230, 121); */
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-top: 15px;
+  background: #deffdc;
+}
+.Rcon {
+  width: 25%;
+  height: 60px;
+  margin-top: 2px;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(233, 107, 107);
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-top: 15px;
+  background: #fad6d6;
+}
+
+/* .Acon > p {
+  margin-top: 5px;
+  font-size: 25px;
+  text-align: center;
+  color: blue;
+}
+
+.Scon > p {
+  margin-top: 5px;
+  font-size: 25px;
+  text-align: center;
+  color: blue;
+}
+.Icon > p {
+  margin-top: 5px;
+  font-size: 25px;
+  text-align: center;
+  color: blue;
+}
+
+.Ocon > p {
+  margin-top: 5px;
+  font-size: 25px;
+  text-align: center;
+  color: #5a7d3a;
+  color: rgb(187, 230, 121); 
+}
+
+.Rcon > p {
+  margin-top: 5px;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(233, 107, 107);
+}. */
+
+.JobCardsHeaders {
+  margin-left: 20px;
+  width: 97%;
+  height: 65px;
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap:10px;
+}
+
+.Appcards {
+  /* background: #916969; */
+  width: 100%;
+  height: 100vw;
+  /* margin-top: 25px; */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.Shortlistcards {
+  width: 100%;
+  height: 100vw;
+  /* margin-top: 25px; */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.interviwecards {
+  /* background: #916969; */
+  width: 100%;
+  height: 100vw;
+  /* margin-top: 25px; */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.Offercards {
+  /* background: #916969; */
+  width: 100%;
+  height: 100vw;
+  /* margin-top: 25px; */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.Rejectedcards {
+  /* background: #916969; */
+  width: 100%;
+  height: 100vw;
+  /* margin-top: 25px; */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* .Sidebarcon {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+} */
+
+.SideBarCon {
+  background: rgb(1, 1, 66);
+  width: 15%;
+  height: 100vw;
+  /* margin-right: 15px; */
+  /* border: 1px solid red; */
+
+  /* margin-right: 50px; */
+}
+
+/* .content {
+  background: rgb(176, 140, 140);
+  height: 100vh;
+  width: 83%;
+} */
+
+.SideBarCon > p {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px;
+  color: rgb(246, 238, 238);
+}
+.SideBarCon > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.SideBarCon > ul > li {
+  /* text-align: center; */
+  font-size: 20px;
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+.App {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid; */
+  /* background: greenyellow; */
+  /* margin-right: 500px; */
+}
+
+.data {
+  width: 100%;
+  height: 100vh;
+  background: whitesmoke;
+  /* border: 1px solid yellow; */
+  /* margin-right: 80px; */
+}
+
+/* form styling */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.35);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+.modal {
+  width: 600px;
+  max-width: 90%;
+
+  background: #fff;
+
+  border-radius: 20px;
+
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.modal h4 {
+  font-size: 28px;
+  margin: 0 0 10px;
+  color: #1f2937;
+}
+
+.modal input,
+.modal select,
+.modal textarea {
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border: 1px solid #dbe2ea;
+  border-radius: 12px;
+
+  font-size: 15px;
+
+  outline: none;
+  box-sizing: border-box;
+}
+
+.uploadFile {
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+.uploadFile::file-selector-button {
+  background-color: #3182ce;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: background-color 0.2s ease;
+}
+.uploadFile::file-selector-button:hover {
+  background-color: #77bc84;
+}
+
+.modal textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+.modal input:focus,
+.modal select:focus,
+.modal textarea:focus {
+  border-color: #4f46e5;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.row input,
+.row select {
+  flex: 1;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.cancel-btn {
+  padding: 12px 22px;
+
+  border: 1px solid #d1d5db;
+  background: white;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cancel-btn:hover {
+  background: rgb(254, 184, 184);
+}
+
+.save-btn {
+  padding: 12px 22px;
+
+  border: none;
+
+  background: #172554;
+  color: white;
+
+  border-radius: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  opacity: 0.9;
+}
+.editResume {
+  font-size: 15px;
+  margin-left: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* table styling  */
+.tableCon {
+  width: 95%;
+  height: 100vw;
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.table-container {
+  margin-top: 20px;
+  width: 90%;
+  max-width: 1000px;
+  max-height: 620px; /* Fixed height */
+  background: white;
+  border-radius: 15px;
+  overflow-y: scroll; /* Vertical scroll */
+  overflow-x: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.table-container::-webkit-scrollbar {
+  display: none;
+}
+
+.table-title {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  position: sticky;
+  top: 68px; /* Adjust based on title height */
+  background: #eef2ff;
+  color: #4338ca;
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+  z-index: 2;
+}
+
+td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+tr {
+  transition: 0.3s;
+}
+
+tr:hover {
+  background: #f8faff;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.applied {
+  background: #f59e0b;
+}
+
+.interview {
+  background: #2acb09;
+}
+
+.offer {
+  background: #10b981;
+}
+
+.shortlist {
+  background: #3b82f6;
+}
+
+.rejected {
+  background: #dc3939;
+}
+tr:hover {
+  background: #f8faff;
+  transform: scale(1.01);
+}
+tr:hover {
+  background: #f8faff;
+}
+
+.view-btn,
+.download-btn,
+.delete-btn {
+  border: none;
+  padding: 8px 12px;
+  margin: 2px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.view-btn {
+  background: #3b82f6;
+}
+
+.download-btn {
+  background: #10b981;
+}
+
+.delete-btn {
+  background: #ef4444;
+}
+
+.view-btn:hover,
+.download-btn:hover,
+.delete-btn:hover {
+  opacity: 0.85;
+}
+
+.action-buttons > a {
+  text-decoration: none;
+}
+/* How to upload a pdf file in react */
+
+.dashSear{
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashSear>input{
+  margin-top: 23px;
+  margin-right: 79px;
+  height: 30px;
+  border-radius: 6px;
+  width: 200px;
+}
